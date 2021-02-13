@@ -28,34 +28,28 @@
 
 .icon-github:before {
   content: "\e900";
-  color: #fff;
 }
 .icon-discord:before {
   content: "\e901";
-  color: #7289da;
 }
 .icon-youtube:before {
   content: "\e902";
-  color: #f00;
 }
 .icon-twitter:before {
   content: "\e903";
-  color: #1da1f2;
 }
 .icon-minecraft:before {
   content: "\e904";
-  color: #007806;
 }
 .icon-blog:before {
   content: "\e905";
-  color: #547aa0;
 }
+
 
 :root {
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "BIZ UDPGothic", Meiryo,
     sans-serif;
   --background: #181A1B;
-  --name: #bdb7af;
   --text: #e8e6e3;
   --accent: #1AA378;
 }
@@ -67,6 +61,11 @@ body {
 
 span {
   margin-right: 0.5em;
+  color: #fff;
+}
+
+span:before {
+  color: #fff;
 }
 
 footer {
@@ -126,7 +125,7 @@ footer a {
 
 #userName {
   width: 100%;
-  color: var(--name);
+  color: var(--text);
   font-family: var(--font);
   font-size: 1.2rem;
   font-weight: 400;
