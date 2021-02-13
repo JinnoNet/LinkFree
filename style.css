@@ -48,31 +48,21 @@
 }
 .icon-blog:before {
   content: "\e905";
-  color: #547AA0;
+  color: #547aa0;
 }
 
 :root {
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "BIZ UDPGothic", Meiryo,
     sans-serif;
-  --background: #282a36;
-  --selection: #44475a;
-  --comment: #6272a4;
-  --purple: #bd93f9;
-  --white: #f8f8f2;
-  --pink: #ff79c6;
+  --background: #181A1B;
+  --name: #bdb7af;
+  --text: #e8e6e3;
+  --accent: #1AA378;
 }
 
 body {
+  font-family: var(--font);
   background-color: var(--background);
-  color: var(--white);
-}
-
-a {
-  color: var(--comment);
-}
-
-a:hover {
-  color: var(--purple);
 }
 
 span {
@@ -81,13 +71,16 @@ span {
 
 footer {
   text-align: center;
-
-  color: var(--comment);
-
+  color: var(--text);
   font-family: var(--font);
   font-size: 0.75rem;
   font-weight: 400;
 }
+
+footer a {
+  color: var(--text);
+}
+
 .userIcon {
   margin: 35px auto 20px;
   position: relative;
@@ -133,16 +126,12 @@ footer {
 
 #userName {
   width: 100%;
-
-  color: var(--pink);
-
+  color: var(--name);
   font-family: var(--font);
   font-size: 1.2rem;
   font-weight: 400;
-
   text-align: center;
   text-decoration: none;
-
   line-height: 1.25;
   display: block;
 }
@@ -150,31 +139,25 @@ footer {
 #links {
   max-width: 675px;
   width: auto;
-
   display: block;
-
   margin: 27px auto;
 }
 .link {
   display: block;
+  color: var(--text);
   margin-bottom: 20px;
   padding: 17px;
-
-  background-color: var(--background);
-
-  font-family: var(--font);
+  background-color: var(--accent);
   font-size: 1.2rem;
   font-weight: 500;
-
-  border-radius: 5px;
-  border: solid var(--purple) 1px;
-
+  border-radius: 10px;
+  border: solid var(--accent) 2px;
   text-align: center;
   text-decoration: none;
-
   transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
 }
 
 .link:hover {
-  background-color: var(--selection);
+  background-color: var(--background);
+  color: var(--accent);
 }
