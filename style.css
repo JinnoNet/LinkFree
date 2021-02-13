@@ -51,8 +51,7 @@
   }
   
 :root {
-    --font: -apple-system, BlinkMacSystemFont, Arial, "BIZ UDPGothic", Meiryo, sans-serif;
-    
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "BIZ UDPGothic", Meiryo, sans-serif;
     --background: #282a36;
     --selection:#44475a;
     --comment:#6272a4;
