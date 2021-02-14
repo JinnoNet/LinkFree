@@ -45,33 +45,28 @@
   content: "\e905";
 }
 
-
 :root {
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "BIZ UDPGothic", Meiryo,
     sans-serif;
-  --background: #181A1B;
+  --background: #181a1b;
   --text: #e8e6e3;
-  --accent: #1AA378;
+  --accent: #1aa378;
 }
 
 body {
   font-family: var(--font);
+  color: var(--text);
+  font-size: 1.2rem;
+  font-weight: 400;
   background-color: var(--background);
 }
 
 span {
   margin-right: 0.5em;
-  color: #fff;
-}
-
-span:before {
-  color: #fff;
 }
 
 footer {
   text-align: center;
-  color: var(--text);
-  font-family: var(--font);
   font-size: 0.75rem;
   font-weight: 400;
 }
@@ -128,10 +123,6 @@ footer a {
 
 #userName {
   width: 100%;
-  color: var(--text);
-  font-family: var(--font);
-  font-size: 1.2rem;
-  font-weight: 400;
   text-align: center;
   text-decoration: none;
   line-height: 1.25;
@@ -150,7 +141,6 @@ footer a {
   margin-bottom: 20px;
   padding: 17px;
   background-color: var(--accent);
-  font-size: 1.2rem;
   font-weight: 500;
   border-radius: 10px;
   border: solid var(--accent) 2px;
