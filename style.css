@@ -86,7 +86,7 @@ footer a {
 }
 
 #userPhoto {
-  width: 90px;
+  width: auto;
   height: 90px;
   display: block;
   border-radius: 50%;
