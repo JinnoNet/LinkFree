@@ -45,41 +45,117 @@
   content: "\e905";
 }
 
-
 :root {
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "BIZ UDPGothic", Meiryo,
     sans-serif;
-  --background: #181A1B;
-  --text: #e8e6e3;
-  --accent: #1AA378;
+  --background: #181a1b;
+  --text: rgba(0, 0, 0, 0);
+  --accent: #1aa378;
 }
 
 body {
   font-family: var(--font);
   background-color: var(--background);
+  color: var(--text);
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 span {
   margin-right: 0.5em;
-  color: #fff;
-}
-
-span:before {
-  color: #fff;
 }
 
 footer {
   text-align: center;
-  color: var(--text);
-  font-family: var(--font);
   font-size: 0.75rem;
-  font-weight: 400;
+  color: var(--text);
 }
 
 footer a {
   color: var(--text);
+  text-decoration: none;
+  background: linear-gradient(transparent 70%, var(--accent) 100%);
 }
 
+footer a:hover {
+  color: var(--accent);
+}
+
+/* Credit https://codepen.io/nohoid/pen/kIfto */
+
+.all {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(
+    124deg,
+    #ff2400,
+    #e81d1d,
+    #e8b71d,
+    #e3e81d,
+    #1de840,
+    #1ddde8,
+    #2b1de8,
+    #dd00f3,
+    #dd00f3
+  );
+  background-size: 1000% 1000%;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
 .userIcon {
   margin: 35px auto 20px;
   position: relative;
@@ -128,10 +204,6 @@ footer a {
 
 #userName {
   width: 100%;
-  color: var(--text);
-  font-family: var(--font);
-  font-size: 1.2rem;
-  font-weight: 400;
   text-align: center;
   text-decoration: none;
   line-height: 1.25;
@@ -149,14 +221,12 @@ footer a {
   color: var(--text);
   margin-bottom: 20px;
   padding: 17px;
-  background-color: var(--accent);
-  font-size: 1.2rem;
   font-weight: 500;
   border-radius: 10px;
   border: solid var(--accent) 2px;
   text-align: center;
   text-decoration: none;
-  transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
+  transition: all 0.218s cubic-bezier(0.08, 0.59, 0.29, 0.99);
 }
 
 .link:hover {
