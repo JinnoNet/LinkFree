@@ -49,15 +49,15 @@
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "BIZ UDPGothic", Meiryo,
     sans-serif;
   --background: #000032;
-  --text: #F0F0F0;
-  --accent: #3287E6;
+  --text: #f0f0f0;
+  --accent: #3287e6;
 }
 
 body {
   font-family: var(--font);
   color: var(--text);
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 500;
   background-color: var(--background);
 }
 span {
@@ -67,7 +67,6 @@ span {
 footer {
   text-align: center;
   font-size: 0.75rem;
-  font-weight: 400;
 }
 
 footer a {
@@ -120,12 +119,16 @@ footer a:hover {
   }
 }
 
-#userName {
+#userDesc {
   width: 100%;
-  font-size: 1em;
   text-align: center;
   line-height: 1.25;
   display: block;
+}
+
+.userName {
+  font-size: 1em;
+  font-weight: 700;
 }
 
 #links {
@@ -140,7 +143,6 @@ footer a:hover {
   margin-bottom: 20px;
   padding: 17px;
   background-color: var(--accent);
-  font-weight: 500;
   border-radius: 25px;
   border: solid var(--accent) 2px;
   text-align: center;
