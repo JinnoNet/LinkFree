@@ -6,62 +6,85 @@
     <meta charset="UTF-8" />
     <title>@JinnoNet | LinkFree</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="icon.svg" type="image/x-icon" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
   </head>
 
   <body>
-    <div class="userIcon">
-      <img id="userPhoto" src="icon.svg" alt="User Photo" />
-      <div class="box"></div>
+    <div id="userIcon">
+      <img class="userPhoto" src="icon.svg" alt="User Photo" />
+      <div class="userPhotoBox"></div>
     </div>
 
     <a id="userName">@JinnoNet</a>
+
     <div id="links">
-      <a class="link" href="#"
-        ><span class="icon-discord"></span>! じんの#6672</a
-      >
-      <a
-        class="link"
-        href="https://blog.jinno.ga"
-        target="_blank"
-        rel="nofollow noopener noreferrer"
-        ><span class="icon-blog"></span>陰陰ブログ</a
-      >
-      <a
-        class="link"
-        href="https://twitter.com/jinnonet"
-        target="_blank"
-        rel="nofollow noopener noreferrer"
-        ><span class="icon-twitter"></span>Twitter(DM Only)</a
-      >
-      <a
-        class="link"
-        href="https://youtube.com/channel/UCoxgMXpuAMauNSHXx_2VLZQ"
-        target="_blank"
-        rel="nofollow noopener noreferrer"
-        ><span class="icon-youtube"></span>YouTube</a
-      >
-      <a
-        class="link"
-        href="https://github.com/JinnoNet"
-        target="_blank"
-        rel="nofollow noopener noreferrer"
-        ><span class="icon-github"></span>Github</a
-      >
-      <a
-        class="link"
-        href="https://namemc.com/profile/JinnoNet"
-        target="_blank"
-        rel="nofollow noopener noreferrer"
-        ><span class="icon-minecraft"></span>Minecraft</a
-      >
+      <ul>
+        <a href="#"
+          ><li class="linkBox">
+            <span class="icon-discord"></span>Discord
+            <ul>
+              <li>! じんの#6672</li>
+            </ul>
+          </li></a
+        >
+        <a
+          href="https://blog.jinno.ga"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          ><li class="linkBox">
+            <span class="icon-blog"></span>Blog
+            <ul>
+              <li>URLが変わる可能性あり</li>
+            </ul>
+          </li></a
+        >
+        <a
+          href="https://twitter.com/jinnonet"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          ><li class="linkBox">
+            <span class="icon-twitter"></span>Twitter
+            <ul>
+              <li>DMのみ</li>
+            </ul>
+          </li></a
+        >
+        <a
+          href="https://youtube.com/channel/UCoxgMXpuAMauNSHXx_2VLZQ"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          ><li class="linkBox">
+            <span class="icon-youtube"></span>YouTube
+            <ul>
+              <li>何もないです</li>
+            </ul>
+          </li></a
+        >
+        <a
+          href="https://github.com/JinnoNet"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          ><li class="linkBox linkBoxNoExpand"><span class="icon-github"></span>GitHub</li></a
+        >
+        <a
+          href="https://namemc.com/profile/JinnoNet"
+          target="_blank"
+          rel="nofollow noopener noreferrer"
+          ><li class="linkBox">
+            <span class="icon-minecraft"></span>Minecraft
+            <ul>
+              <li>マルチで見かけたら声かけてください</li>
+            </ul>
+          </li></a
+        >
+      </ul>
     </div>
 
     <footer>
       <a href="https://github.com/JinnoNet/LinkFree" target="_blank"
         >View source</a
       >
-       | Generated from
+      &nbsp;|&nbsp;Generated from
       <a href="https://github.com/MichaelBarney/LinkFree" target="_blank"
         >MichaelBarney/LinkFree</a
       >

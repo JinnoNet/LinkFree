@@ -56,8 +56,8 @@
 body {
   font-family: var(--font);
   color: var(--text);
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 1em;
+  font-weight: 700;
   background-color: var(--background);
 }
 
@@ -73,14 +73,20 @@ footer {
 
 footer a {
   color: var(--text);
+  transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
 }
 
-.userIcon {
+footer a:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+#userIcon {
   margin: 35px auto 20px;
   position: relative;
 }
 
-#userPhoto {
+.userPhoto {
   width: auto;
   height: 90px;
   display: block;
@@ -94,19 +100,13 @@ footer a {
   pointer-events: none;
 }
 
-.box {
+.userPhotoBox {
   width: 100px;
   height: 100px;
   margin: 35px auto 20px;
   border-radius: 50%;
-  background: linear-gradient(
-    45deg,
-    #f09433 0%,
-    #e6683c 25%,
-    #dc2743 50%,
-    #cc2366 75%,
-    #bc1888 100%
-  );
+  background-color: #42378f;
+  background: linear-gradient(315deg, #42378f 0%, #f53844 74%);
   position: relative;
   z-index: -1;
   animation: 1.4s linear infinite rotation;
@@ -124,7 +124,6 @@ footer a {
 #userName {
   width: 100%;
   text-align: center;
-  text-decoration: none;
   line-height: 1.25;
   display: block;
 }
@@ -135,21 +134,60 @@ footer a {
   display: block;
   margin: 27px auto;
 }
-.link {
+
+.linkBox {
   display: block;
-  color: var(--text);
   margin-bottom: 20px;
   padding: 17px;
   background-color: var(--accent);
   font-weight: 500;
-  border-radius: 10px;
+  border-radius: 25px;
   border: solid var(--accent) 2px;
   text-align: center;
-  text-decoration: none;
   transition: all 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99);
 }
 
-.link:hover {
+.linkBox:hover {
   background-color: var(--background);
   color: var(--accent);
+  padding-bottom: 34px;
+}
+
+.linkBoxNoExpand:hover {
+  padding-bottom: 17px;
+}
+
+#links a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+#links a:hover {
+  color: var(--accent);
+}
+
+#links ul,
+#links li {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+#links ul li ul {
+  display: none;
+  margin-bottom: -19px;
+}
+
+#links ul li:hover ul {
+  animation: fadeIn 0.25s ease-out 1 normal;
+  display: block;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
