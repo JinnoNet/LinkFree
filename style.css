@@ -48,9 +48,9 @@
 :root {
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", "BIZ UDPGothic", Meiryo,
     sans-serif;
-  --background: #06565b;
-  --text: #c2dde4;
-  --accent: #66a4ac;
+  --background: #000032;
+  --text: #F0F0F0;
+  --accent: #3287E6;
 }
 
 body {
