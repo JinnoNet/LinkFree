@@ -5,6 +5,11 @@ A free and open source alternative to LinkTree!
 
 <img src="https://i.imgur.com/B4LX0kY.png" alt="alt text" width="250px">
 
+## Links list
+無料ドメイン、無料サービスを利用しているのでリンク切れの可能性があるため複数のミラーサイトを運営しています。
+* https://jinno.ga - Vercelサーバー
+* https://jinnonet.vercel.app - Vercelサーバー
+* https://jinno.netlify.app - Netlifyサーバー
 ## What is LinkFree?
 Ever wanted to add more links to your Instagram bio? LinkFree does just that! It gathers all of your links into one page that is easy to navigate.
 
