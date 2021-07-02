@@ -18,11 +18,11 @@ window.onload = function() {
       "月" +
       jsonData.date.d +
       "日 " +
-      jsonData.date.h +
+      jsonData.date.H +
       ":" +
       jsonData.date.M +
       ":" +
-      jsonData.date.s +
+      jsonData.date.S +
       " 更新(UTC+9)";
 
     if (status === "Online") {

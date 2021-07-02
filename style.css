@@ -220,7 +220,8 @@ footer a:hover {
   width: 1070px;
   height: 48px;
 	max-width: 100%;
-	max-height: auto;
+	max-height: 100%;
+  margin: auto;
 }
 .statusBox {
   background-color: var(--accent);
