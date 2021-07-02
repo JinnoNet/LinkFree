@@ -26,19 +26,18 @@ window.onload = function() {
       " 更新(UTC+9)";
 
     if (status === "Online") {
-      document.getElementById("status").innerText = "Online";
+      document.getElementById("status").innerHTML = "<span class='icon-discord'></span><p>Online</p>";
       document.querySelector('.status').style.backgroundColor = "#009222"
       document.querySelector('.status').style.border = 'solid #009222 2px'
       
     } else {
-      document.getElementById("status").innerText =
-        duration + "時間前までOnline";
+      document.getElementById("status").innerHTML = "<span class='icon-discord'></span><p>" + duration + "時間前までOnline</p>";
       document.querySelector('.status').style.backgroundColor = "#292929"
       document.querySelector('.status').style.border = 'solid #292929 2px'
     }
-    document.getElementById("dateTime").innerText = date;
+    document.getElementById("dateTime").innerHTML = "<p>" + date + "</p>";
   } else {
-    document.getElementById("status").innerText = "取得できません。";
+    document.getElementById("status").innerHTML = "<p>取得できません。</p>";
     document.querySelector('.status').style.backgroundColor = "#464646"
     document.querySelector('.status').style.border = 'solid #464646 2px'
   };

@@ -223,6 +223,12 @@ footer a:hover {
 	max-height: 100%;
   margin: auto;
 }
+
+#statusBoxs p {
+  display: inline-block;
+  margin: 0;
+}
+
 .statusBox {
   background-color: var(--accent);
   border-radius: 25px 25px 0 0;
