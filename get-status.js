@@ -2,7 +2,7 @@ window.onload = function() {
   let req = new XMLHttpRequest();
   req.open(
     "GET",
-    "https://raw.githubusercontent.com/JinnoNet/online-status-json/main/status-json.json"
+    "https://raw.githubusercontent.com/JinnoNet/status/main/status-json.json"
   );
   req.send(null);
   req.onload = function() {
@@ -10,19 +10,19 @@ window.onload = function() {
     var data = req.responseText;
     var jsonData = JSON.parse(data);
     var status = jsonData.status;
-    var duration = jsonData.duration;
-    var date =
-      jsonData.date.y +
+    var timeLag = jsonData.timeLag;
+    var date = 
+      jsonData.upDateTime.y +
       "年" +
-      jsonData.date.m +
+      jsonData.upDateTime.m +
       "月" +
-      jsonData.date.d +
+      jsonData.upDateTime.d +
       "日 " +
-      jsonData.date.H +
+      jsonData.upDateTime.H +
       ":" +
-      jsonData.date.M +
+      jsonData.upDateTime.M +
       ":" +
-      jsonData.date.S +
+      jsonData.upDateTime.S +
       " 更新(UTC+9)";
 
     if (status === "Online") {
@@ -31,7 +31,7 @@ window.onload = function() {
       document.querySelector('.status').style.border = 'solid #009222 2px'
       
     } else {
-      document.getElementById("status").innerHTML = "<span class='icon-discord'></span><p>" + duration + "時間前までOnline</p>";
+      document.getElementById("status").innerHTML = "<span class='icon-discord'></span><p>" + timeLag + "前までOnline</p>";
       document.querySelector('.status').style.backgroundColor = "#292929"
       document.querySelector('.status').style.border = 'solid #292929 2px'
     }
