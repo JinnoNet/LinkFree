@@ -41,5 +41,8 @@ window.onload = function() {
     document.querySelector('.status').style.backgroundColor = "#464646"
     document.querySelector('.status').style.border = 'solid #464646 2px'
   };
+  request.setRequestHeader('Pragma', 'no-cache');
+  request.setRequestHeader('Cache-Control', 'no-cache');
+  xhr.setRequestHeader('If-Modified-Since', 'Thu, 01 Jun 1970 00:00:00 GMT'); 
   }
 };
